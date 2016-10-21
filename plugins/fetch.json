@@ -7,6 +7,15 @@
         "is_top_level": true,
         "variables": {}
     },
+    "com.juleskelly.tesseract": {
+        "source": {
+            "type": "git",
+            "url": "http://github.com/phoenixtwister/cordova-juleskelly-tesseract.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "cordova-plugin-camera": {
         "source": {
             "type": "registry",
@@ -21,14 +30,6 @@
             "id": "cordova-plugin-compat"
         },
         "is_top_level": false,
-        "variables": {}
-    },
-    "cordova-plugin-tesseract": {
-        "source": {
-            "type": "local",
-            "path": "cordova-plugin-tesseract"
-        },
-        "is_top_level": true,
         "variables": {}
     }
 }

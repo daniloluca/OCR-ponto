@@ -1,6 +1,14 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "id": "com.juleskelly.tesseract.TesseractOCR",
+        "file": "plugins/com.juleskelly.tesseract/www/tesseractOCR.js",
+        "pluginId": "com.juleskelly.tesseract",
+        "clobbers": [
+            "tesseractOCR"
+        ]
+    },
+    {
         "id": "cordova-plugin-camera.Camera",
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
         "pluginId": "cordova-plugin-camera",
@@ -31,23 +39,15 @@ module.exports = [
         "clobbers": [
             "CameraPopoverHandle"
         ]
-    },
-    {
-        "id": "cordova-plugin-tesseract.TesseractPlugin",
-        "file": "plugins/cordova-plugin-tesseract/www/tesseractPlugin.js",
-        "pluginId": "cordova-plugin-tesseract",
-        "clobbers": [
-            "TesseractPlugin"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.3.0",
+    "com.juleskelly.tesseract": "1.2",
     "cordova-plugin-compat": "1.0.0",
-    "cordova-plugin-camera": "2.3.0",
-    "cordova-plugin-tesseract": "0.0.1"
+    "cordova-plugin-camera": "2.3.0"
 };
 // BOTTOM OF METADATA
 });

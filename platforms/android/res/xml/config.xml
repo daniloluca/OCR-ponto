@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="TesseractOCR">
+        <param name="android-package" value="com.juleskelly.tesseract.TesseractOCR" />
+    </feature>
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
-    <feature name="TesseractPlugin">
-        <param name="android-package" value="com.gmazzoni.cordova.TesseractPlugin" />
-    </feature>
-    <name>HelloWorld</name>
+    <name>OCR-ponto</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A sample application to do I'm too lazy to do.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team

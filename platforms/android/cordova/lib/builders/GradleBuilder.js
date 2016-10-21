@@ -89,8 +89,7 @@ GradleBuilder.prototype.prepBuildFiles = function() {
     // Write the settings.gradle file.
     fs.writeFileSync(path.join(this.root, 'settings.gradle'),
         '// GENERATED FILE - DO NOT EDIT\n' +
-        'include ":"\n' + settingsGradlePaths.join('') +
-        'include ":tess-two"');
+        'include ":"\n' + settingsGradlePaths.join(''));
     // Update dependencies within build.gradle.
     var buildGradle = fs.readFileSync(path.join(this.root, 'build.gradle'), 'utf8');
     var depsList = '';
@@ -190,7 +189,7 @@ GradleBuilder.prototype.build = function(opts) {
     .progress(function (stdio){
         if (stdio.stderr) {
             /*
-             * Workaround for the issue with Java printing some unwanted information to
+             * Workaround for the issue with Java printing some unwanted information to 
              * stderr instead of stdout.
              * This function suppresses 'Picked up _JAVA_OPTIONS' message from being
              * printed to stderr. See https://issues.apache.org/jira/browse/CB-9971 for
